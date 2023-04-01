@@ -11,7 +11,7 @@ export class Random {
 
     nextInt(): number {
         if (this.min < this.max) {
-            return this.min + Math.random() * (this.max - this.min);
+            return Math.floor(this.min + Math.random() * (this.max - this.min));
         }
         return Math.floor(1 + Math.random() * 100);
     }

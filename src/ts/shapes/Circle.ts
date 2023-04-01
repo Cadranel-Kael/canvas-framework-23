@@ -4,7 +4,7 @@ import {Animatable} from "../Types/Animatable";
 import {ICircle} from "../Types/ICircle";
 
 export class Circle extends Shape implements Animatable {
-    protected readonly radius: number;
+    protected radius: number;
 
     constructor(circle: ICircle) {
         super(circle);

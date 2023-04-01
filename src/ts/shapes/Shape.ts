@@ -3,13 +3,15 @@ import {Hsl} from "../Colors/Hsl";
 import {Rgb} from "../Colors/Rgb";
 import {Canvas} from "../Canvas";
 import {IShape} from "../Types/IShape";
+import {Hsla} from "../Colors/Hsla";
+import {Rgba} from "../Colors/Rgba";
 
 export abstract class Shape {
-    protected readonly ctx: CanvasRenderingContext2D;
+    protected ctx: CanvasRenderingContext2D;
     protected position: Position;
-    protected readonly speed: number;
+    protected speed: number;
     protected direction: number;
-    color: Hsl | Rgb;
+    color: Hsl | Rgb | Hsla | Rgba;
     protected canvas: Canvas;
 
 
